@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Hello World</title>
+  <link href='style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+        <div id="application-root"></div>
+
+        <script
+          src="https://unpkg.com/react@16/umd/react.development.js">
+        </script>
+        <script
+          src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+        </script>
+        <script
+        src="https://unpkg.com/babel-standalone@6/babel.min.js">
+        </script>
+        <script type="text/babel">
+                    function App(props) {
+                        return (
+                            <main>
+                            {props.children}
+                            </main>
+                        );
+                        }
+
+                      
+
+                        // Nested elements inside the App
+                        ReactDOM.render(
+                        
+                        
+                        <App className='appClass'>
+                                <header>
+                                    <h1>Sally Student</h1>
+                                    <h2>Resume</h2>
+                                </header>
+
+                                <main>
+                                <section>
+                                    <h3>Education</h3>
+                                    <ul>
+                                        <li>Harvard University - Bachelors of science</li>
+                                        <li>Stanford University - Masters of biochemical engineering</li>
+                                    </ul>
+                                </section>
+
+                                <section>
+                                    <h3>Employment History</h3>
+                                    <ul>
+                                        <li><p>Happy Place Daycare - Manager, 2014-2015, Managing children</p></li>
+                                        <li><p>United States Marine Corps - Private/Cook, 2015-Present, Cooking to protect this country's freedom </p></li>
+                                    </ul>
+                                </section>
+
+                                <address>
+                                    <h3>Contact Information</h3>
+                                    <ul>
+                                    <li>Name: Sally Student</li>
+                                    <li>Email: <a id="email" href="mailto:sally.student@usmc.gov">sally.student@usmc.gov </a></li>
+                                    <li>Phone: 555-321-6789</li>
+                                    </ul>
+                                    <h4>Me</h4>
+                                    <img width={300} height={400} src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt=""Sally Student/>
+                                </address>
+                                </main>
+
+                        </App>,
+                        document.querySelector('#application-root')
+                        );
+        </script>
+
+</body>
+</html>

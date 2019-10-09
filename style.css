@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+  }
+  
+  #email {
+    color: red;
+  }
+  
+  #email:focus {
+    background-color: white;
+    color: black;
+    outline: 3px solid yellow;   
+  }
+  
+  #email:hover {
+    background-color: white;
+    color: black;
+    outline: 3px solid yellow;
+  }
+  
+  img {
+    border: 2px solid yellow;
+    opacity: 0.75;
+    margin-bottom: 10px;
+  }
+  
+  li {
+    list-style: none;
+  }
